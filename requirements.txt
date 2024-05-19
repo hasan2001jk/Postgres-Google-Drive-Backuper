@@ -1,0 +1,12 @@
+datetime==4.3
+google-auth==1.35.0
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==0.4.6
+google-api-python-client==2.24.0
+oauthlib==3.1.1
+os==0.1.5
+pathlib==1.0.1
+psycopg2==2.9.2
+pytz==2021.3
+socket==0.1.0
+termcolor==1.1.0
