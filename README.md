@@ -93,8 +93,8 @@ To find the **Google Drive** folder **ID**, follow these steps:
 2. Navigate to the folder for which you need the **ID**.
 3. Click on the folder to open it.
 4. Look at the **URL** in your web browser's address bar. The long string of characters at the end of the URL is the folder's **ID**.
-![image](https://github.com/hasan2001jk/Postgres-Google-Drive-Backuper/assets/64947215/b0b4fdb8-0941-4e1a-867a-5e4e6e139729)
-
+![image](https://github.com/hasan2001jk/Postgres-Google-Drive-Backuper/assets/64947215/d9aae11f-1e10-46fd-bd99-d8db2cd1b79f)
+**(Don't forget to Remove the Query Parameter)**
 
 ## BACKUP
 
@@ -131,4 +131,12 @@ Here's how the script works:
     - `_get_all_db_tables()`: Helper function that returns a list of all table names in the public schema of the database.
     - `_silent_remove_file(filename)`: Helper function that removes a specified file without throwing an error if the file does not exist.
 4. **Main Program**: The main part of the script (under `if __name__ == "__main__":`) calls the defined functions in the correct order. It prints a greeting message, checks the hostname and if the private key file exists, downloads the most recent backup file from Google Drive, decrypts and unzips the downloaded file, clears the database, loads the unzipped dump into the database, and finally, removes the temporary file.
+
+## Results
+
+![image](https://github.com/hasan2001jk/Postgres-Google-Drive-Backuper/assets/64947215/596a2e85-4124-458a-802d-b7f80d5f19cb)
+![image](https://github.com/hasan2001jk/Postgres-Google-Drive-Backuper/assets/64947215/fa8d8534-2dd3-47e3-a387-a642d86e2df7)
+![image](https://github.com/hasan2001jk/Postgres-Google-Drive-Backuper/assets/64947215/c90b37cf-08c6-44ab-854d-8345a63c74b8)
+
+
 
